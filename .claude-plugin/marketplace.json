@@ -13,7 +13,7 @@
       "name": "yarradev-board",
       "source": "./yarradev-board",
       "description": "Agent-native SDLC orchestrator: a reconciliation-loop skill + role subagents (designer/developer/tester/security-advisor/releaser) that drive a yarradev HTTP board through a gated lifecycle (spec→dev→test→done→staging→prod) under per-role board identities — running on your own Claude subscription.",
-      "version": "0.3.0",
+      "version": "0.4.0",
       "author": { "name": "Yarra Systems" },
       "homepage": "https://github.com/yarrasys/public-claude-plugins/tree/main/yarradev-board",
       "license": "MIT",
