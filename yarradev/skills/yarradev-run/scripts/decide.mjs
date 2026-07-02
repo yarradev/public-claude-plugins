@@ -1,5 +1,5 @@
 /*
- * yarradev-board — pure per-card decision (gate-aware + budget-aware).
+ * yarradev — pure per-card decision (gate-aware + budget-aware).
  *
  * PROVENANCE: extends yarradev-platform/orchestrator/src/decide.ts; mechanical-gate + budgets mirror
  * v1 eval-gates.js (mechanical() + the transition_budget/bounce_limit escalate backstop).
