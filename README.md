@@ -6,18 +6,18 @@ A [Claude Code plugin marketplace](https://code.claude.com/docs/en/plugin-market
 ## Use it
 
 ```
-/plugin marketplace add yarrasys/public-claude-plugins
-/plugin install yarradev@yarrasys
+/plugin marketplace add yarradev/public-claude-plugins
+/plugin install yarradev@yarradev
 ```
 
-(`@yarrasys` is the **marketplace** name declared in `.claude-plugin/marketplace.json`, not the plugin
+(`@yarradev` is the **marketplace** name declared in `.claude-plugin/marketplace.json`, not the plugin
 name.)
 
 ## Plugins
 
 | Plugin | What it does |
 |---|---|
-| [**yarradev**](./yarradev) | An agent-native SDLC orchestrator — a reconciliation-loop skill + role subagents (designer → developer → tester, plus a security-advisor, a releaser staging deploy, and a human production gate) that drive a yarradev HTTP board through a gated lifecycle (`spec→dev→test→done→staging→prod`), running on **your own Claude subscription**. See its [README](./yarradev/README.md). |
+| [**yarradev**](https://github.com/yarradev/yarradev-board) | An agent-native SDLC orchestrator — a reconciliation-loop skill + role subagents (designer → developer → tester, plus a security-advisor, a releaser staging deploy, and a human production gate) that drive a yarradev HTTP board through a gated lifecycle (`spec→dev→test→done→staging→prod`), running on **your own Claude subscription**. See its [README](https://github.com/yarradev/yarradev-board#readme). |
 
 > ⚠️ `yarradev` is the open **client**. Its HTTP board backend (the `yarradev-platform` Cloudflare
 > service) is a separate, not-yet-public service — without a board endpoint to point it at, only the
