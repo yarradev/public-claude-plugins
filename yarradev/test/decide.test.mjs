@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
-import { decide } from "../skills/yarradev-board-run/scripts/decide.mjs";
+import { decide } from "../skills/yarradev-run/scripts/decide.mjs";
 
 const LC = {
   spec: { owner: "designer", to: "dev" },
@@ -93,7 +93,7 @@ test("decide (human gate): promote a human-gated stage; terminal + veto + blocke
 // Pin the SHIPPED config (config/board.example.json) — not a hand-written fixture — to decide(), so a
 // state rename (prod→production) or a reshape of `done` (back to terminal) is caught by the suite.
 const EXAMPLE = JSON.parse(
-  readFileSync(new URL("../skills/yarradev-board-run/config/board.example.json", import.meta.url), "utf8")
+  readFileSync(new URL("../skills/yarradev-run/config/board.example.json", import.meta.url), "utf8")
 );
 
 test("decide (shipped board.example.json): full spec→dev→test→done→staging→prod lifecycle routes correctly", () => {
